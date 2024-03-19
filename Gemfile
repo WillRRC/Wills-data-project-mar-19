@@ -2,6 +2,13 @@ source "https://rubygems.org"
 
 ruby "3.0.2"
 
+gem 'faker'
+#pagnitation
+gem 'kaminari'
+#pokemonnnn
+gem 'poke-api-v2'
+#bcrypttter has_secure_password
+gem 'bcrypt', '~> 3.1.7'
 # Bundle edge Rails instead: gem "rails", github: "rails/rails", branch: "main"
 gem "rails", "~> 7.1.3"
 

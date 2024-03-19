@@ -1,0 +1,10 @@
+<h1>Create an account</h1>
+<h3>Minimum of 3 charachters long for username and password</h3>
+<%= form_for :member, url: '/members' do |f| %>
+
+  <p>Name:</p> <%= f.text_field :username %><br>
+  <p>Password:</p> <%= f.password_field :password %><br>
+  <p>Password Confirmation:</p>> <%= f.password_field :password_confirmation %>
+  <%= f.submit "Submit" %>
+
+<% end %>

@@ -1,1 +1,46 @@
-<h1>wills data</h1>
+<h1>Wills posts</h1>
+<h1>-------------------------</h1>
+<% @memba.each do |f| %>
+ <h1><%=f.username%></h1>
+<% end %>
+<%= paginate @memba %>
+<h1>-------------------------</h1>
+<h2>members list</h2>
+<ul>
+
+  <% @members.each do |mem| %>
+     <li><h4><%=mem.username%></h4></li>
+  <% end %>
+
+</ul>
+<br>
+
+<ul>
+  <% @posts.each do |pos| %>
+    <li>
+      <%= link_to pos.post_title, pos %>
+    </li>
+  <% end %>
+</ul>
+<%= link_to "New Article", new_post_path %>
+<br>
+<h1>Pokemon</h1>
+<% @pokemon.each do |mem| %>
+     <ul>
+     <li><h4><%=mem["name"]%></h4></li>
+     </ul>
+  <% end %>
+<br>
+<h1>Crypto coins</h1>
+  <% @crypto.each do |mem| %>
+     <ul>
+     <li><h4><%=mem['name']%></h4></li>
+     </ul>
+  <% end %>
+  <br>
+<h1>star wars charachters</h1>
+  <% @starwars.each do |mem| %>
+     <ul>
+     <li><h4><%=mem['name']%></h4></li>
+     </ul>
+  <% end %>
